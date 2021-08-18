@@ -1,0 +1,23 @@
+h3 {
+  font-family: "Ubuntu", sans-serif;
+}
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+.btn.btn-lg.btn-primary {
+  font-size: 25px;
+  padding: 25px 50px;
+}
+.elementor {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  font-size: 24px;
+}

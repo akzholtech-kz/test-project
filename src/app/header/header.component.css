@@ -1,0 +1,12 @@
+.col-xs-12{
+padding-left: 100px;
+margin-top: 20px;
+}
+
+.nav.navbar-nav {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: medium;
+}
+.nav.navbar-nav {
+    margin-left: 50px;
+}

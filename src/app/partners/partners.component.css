@@ -1,0 +1,16 @@
+.container-root{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 241, 241);
+    align-content: center;
+}
+
+.container-body{
+    display: flex;
+    
+    padding: 100px;
+    justify-content: space-around;
+}
+.name{
+    justify-content: center;
+}
