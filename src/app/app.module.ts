@@ -4,19 +4,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
-import { HomeComponent } from './home/home.component';
-import { HomeRouterModule } from './home/home.router.module';
-import { DropDownDirective } from './shared/dropdown.directive';
+import { DropDownDirective } from './shared/directives/dropdown.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    DropDownDirective,
     FooterComponent,
-    HomeComponent,
+    DropDownDirective,
   ],
-  imports: [BrowserModule, AppRoutingModule, HomeRouterModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
