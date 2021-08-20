@@ -1,12 +1,25 @@
-.col-xs-12{
-padding-left: 100px;
-margin-top: 20px;
+.col-xs-12 {
+  padding-left: 100px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .nav.navbar-nav {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: medium;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  margin-left: 50px;
 }
-.nav.navbar-nav {
-    margin-left: 50px;
+
+.nav.navbar-nav li a{
+  color: #07f;
+}
+.lang {
+  margin-left: 350px;
+  list-style: none;
+  font-size: 18px;
+}
+.navbar.navbar-default{
+  position: sticky;
+  top: 0;
 }

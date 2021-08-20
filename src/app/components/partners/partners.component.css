@@ -1,16 +1,21 @@
-.container-root{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(243, 241, 241);
-    align-content: center;
+.root-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(235, 235, 235);
+  height: 250px;
 }
 
-.container-body{
-    display: flex;
-    
-    padding: 100px;
-    justify-content: space-around;
+.container-body {
+  display: flex;
+  padding: 0 150px;
+  justify-content: space-around;
+  height: 60%;
 }
-.name{
-    justify-content: center;
+.name-1 {
+  text-align: center;
+  height: 40%;
+  justify-self: center;
+  font-size: 40px;
+  padding: 15px 0;
+  font-weight: 500;
 }

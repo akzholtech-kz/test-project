@@ -7,21 +7,21 @@
     </span>
     <div class="navbar-default">
       <ul class="nav navbar-nav">
-        <li><a href="#">Главный</a></li>
-        <li><a href="#">Timetables</a></li>
-        <li><a href="#">Edupage</a></li>
-        <li><a href="#">Partners</a></li>
-        <li><a href="#">Contacts</a></li>
+        <li><a role="button" (click)="scroll('main')">Главный</a></li>
+        <li><a role="button" (click)="scroll('timetables')">Timetables</a></li>
+        <li><a role="button" (click)="scroll('edupage')">Edupage</a></li>
+        <li><a role="button" (click)="scroll('partners')">Partners</a></li>
+        <li><a role="button" (click)="scroll('contacts')">Contacts</a></li>
       </ul>
     </div>
-    <ul class="nav navbar-nav navbar-right">
+    <ul class="lang">
       <li class="dropdown" appDropDown>
         <a class="dropdown-toggle" role="button"
-          >Language<span class="caret"></span
+          >{{ language ? "Қазақша" : "Русcкий" }}<span class="caret"></span
         ></a>
         <ul class="dropdown-menu">
-          <li><a role="button">Қазақша</a></li>
-          <li><a role="button">Руский</a></li>
+          <li><a role="button" (click)="onClick()">Қазақша</a></li>
+          <li><a role="button" (click)="onClick()">Русcкий</a></li>
         </ul>
       </li>
     </ul>

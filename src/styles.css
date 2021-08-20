@@ -1,5 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
 body {
   font-family: "Ubuntu", sans-serif;
+}
+.box-container {
+  padding: 10px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 100px;
+}
+.box-1 {
+  width: 50%;
+  padding-right: 10px;
+}
+.box-2 {
+  width: 50%;
+  padding-left: 10px;
+}
+p {
+  font-size: medium;
+  color: rgba(128, 128, 128, 0.979);
+  line-height: 1.8em;
+  vertical-align: baseline;
+}
+h5 {
+  color: #07f;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.8em;
+}
+.primary {
+  text-align: center;
+  width: 100%;
+  font-size: 50px;
+  padding: 10px 100px;
+  background-color: #07f;
+  color: white;
 }

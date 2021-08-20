@@ -1,16 +1,16 @@
-h3 {
-  font-family: "Ubuntu", sans-serif;
+
+.primary-1{
+  font-size: 24px;
+  padding: 20px 100px;
+  background-color: #07f;
+  color: white;
+  border-radius: 10px;
+  border-color: #07f;
 }
-h2 {
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-}
-.btn.btn-lg.btn-primary {
-  font-size: 25px;
-  padding: 25px 50px;
-}
-.elementor {
+.box-3 {
   display: flex;
+  justify-content: space-around;
+  margin: 30px;
 }
 
 ul {
@@ -20,4 +20,24 @@ ul {
 
 .list-item {
   font-size: 24px;
+  padding-left: 15px;
+}
+.box-4{
+  text-align: center;
+  font-size: 32px;
+  margin: 40px;
+}
+li{
+  display: flex;
+}
+.any{
+  padding-top: 5px;
+}
+.button {
+  transition-duration: 0.4s;
+}
+
+.primary-1:hover {
+  background-color: #2b70ca;
+  color: white;
 }

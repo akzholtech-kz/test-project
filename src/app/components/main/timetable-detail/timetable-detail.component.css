@@ -1,0 +1,9 @@
+.sm-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.list-1{
+    display: flex;
+}
