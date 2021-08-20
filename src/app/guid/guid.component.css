@@ -1,0 +1,42 @@
+.container{
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.list-1{
+    display: flex;
+    margin: 0px 0px 50px 0px;   
+    
+}
+.items{
+    display: flex;
+    padding: 20px;
+    border-color:lightgray;
+    border-width: 2px;
+    border-style: solid;
+    width: 270px;
+    height: 96px;
+    margin: 0px 8px;
+    align-items: center;
+}
+.list-1.item{
+    margin-bottom: 150px;
+    
+}
+span{
+    padding-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+img{
+    height: 40px;
+}
+label{
+    font-size: 20px;
+}
+.items:hover{
+    background-color: oldlace;
+}

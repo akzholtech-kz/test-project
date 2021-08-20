@@ -1,33 +1,22 @@
-import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContactsComponent } from './components/contacts/contacts.component';
-import { EdupageComponent } from './components/edupage/edupage.component';
-import { HeaderComponent } from './components/header/header.component';
-import { MainComponent } from './components/main/main.component';
-import { PartnersComponent } from './components/partners/partners.component';
-import { DropDownDirective } from './shared/dropdown.directive';
-import { TimetablesComponent } from './components/timetables/timetables.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { TestComponent } from './test/test.component';
-import { TimetableDetailComponent } from './main/timetable-detail/timetable-detail.component';
+import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './home/home.component';
+import { HomeRouterModule } from './home/home.router.module';
+import { DropDownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MainComponent,
-    TimetablesComponent,
-    EdupageComponent,
-    PartnersComponent,
-    ContactsComponent,
     DropDownDirective,
     FooterComponent,
-    TestComponent,
-    TimetableDetailComponent,
+    HomeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HomeRouterModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -9,13 +9,13 @@ import { Router } from '@angular/router';
 })
 export class MainComponent implements OnInit {
   image = "https://timetables.kz/wp-content/uploads/2021/07/tt_mainmock.png";
-  constructor(private router: Router) { };
+  constructor(private router: Router, private route: ActivatedRoute) { };
   
 
   ngOnInit(): void {
   }
 
   onClick() {
-    
+    this.router.navigate(['guid'])
   }
 }

@@ -1,22 +1,12 @@
-import { TestComponent } from './test/test.component';
-
-import { MainComponent } from './components/main/main.component';
-import { ContactsComponent } from './components/contacts/contacts.component';
-import { PartnersComponent } from './components/partners/partners.component';
-import { EdupageComponent } from './components/edupage/edupage.component';
+import { HomeRouterModule } from './home/home.router.module';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TimetablesComponent } from './components/timetables/timetables.component';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: TestComponent },
-  { path: 'main', component: MainComponent },
-  { path: ':/timetables', component: TimetablesComponent },
-  { path: ':edupage', component: EdupageComponent },
-  { path: ':partners', component: PartnersComponent },
-  { path: ':contacts', component: ContactsComponent },
-
+  { path: 'home', loadChildren: ()=> import('./home/home.router.module').then(m=>m.HomeRouterModule)},
+  { path: 'guid', loadChildren: ()=> import('./guid/guid.module').then(m=>m.GuidModule) },
   { path: '**', redirectTo: '/home' },
 ];
 
