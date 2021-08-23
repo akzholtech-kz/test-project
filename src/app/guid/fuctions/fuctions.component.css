@@ -1,4 +1,4 @@
-/* .container{
+.container{
     height: 550px;
     display: flex;
     flex-direction: column;
@@ -22,9 +22,8 @@
     margin: 0px 8px;
     align-items: center;
 }
-.list-1.item{
-    margin-bottom: 150px;
-    
+.items:hover{
+    background-color: oldlace;
 }
 span{
     padding-left: 10px;
@@ -37,6 +36,3 @@ img{
 label{
     font-size: 20px;
 }
-.items:hover{
-    background-color: oldlace;
-} */
