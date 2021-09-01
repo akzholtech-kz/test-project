@@ -8,12 +8,12 @@ export class Block {
 
 export class Function {
   constructor(
-    public id: number,
+    public id: string,
     public name: string,
     public contents: Content[]
   ) {}
 }
 
 export class Content {
-  constructor(public id: number, public name: string, public text: string) {}
+  constructor(public id: string, public name: string, public text: string) {}
 }

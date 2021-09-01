@@ -1,12 +1,15 @@
-
 <div class="container">
-    <div>
-      <label>Обзор по роли пользователя:</label>
-      <div class="list-1">
-        <div role="button" class="items">
-          <img src="./../../../../assets/svgs/admin.svg" /><span>Aдмин</span>
-        </div>
+  <div>
+    <label>Обзор по роли пользователя:</label>
+    <div class="list-1">
+      <div
+        role="button"
+        class="items"
+        *ngFor="let function of functions"
+        (click)="openFunction(function)"
+      >
+        <img src="./../../../../assets/svgs/admin.svg" /><span>{{ function.name}}</span>
       </div>
     </div>
   </div>
-  
+</div>
