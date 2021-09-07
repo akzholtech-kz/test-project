@@ -11,13 +11,13 @@ export class GuidDataStorageService {
   constructor(private http: HttpClient) {}
 
   public getFunctionById(id: string): Function {
-    return this.functions.find((item) => item.id === id);
+    return this.functions.find((item) => item.id = id);
   }
 
   public getContentBy(functionId: string, contentId: string): Content {
     console.log("functions: ",this.functions)
     return this.getFunctionById(functionId)?.contents?.find(
-      (item) => item.id == contentId
+      (item) => item.id = contentId
     );
   }
 

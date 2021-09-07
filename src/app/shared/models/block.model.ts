@@ -15,5 +15,5 @@ export class Function {
 }
 
 export class Content {
-  constructor(public id: string, public name: string, public text: string) {}
+  constructor(public id: string, public name: string) {}
 }

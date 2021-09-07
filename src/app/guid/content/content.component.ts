@@ -13,14 +13,17 @@ export class ComponentComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private dataService: GuidDataStorageService,
+    private dataService: GuidDataStorageService
   ) {}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
       const functionId = params.get('functionId');
       const contentId = params.get('contentId');
-      this.selectedContent = this.dataService.getContentBy(functionId, contentId);
+      this.selectedContent = this.dataService.getContentBy(
+        functionId,
+        contentId
+      );
       console.log('selectedContent: ', this.selectedContent);
     });
   }

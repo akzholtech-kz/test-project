@@ -1,19 +1,51 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { Subscription } from 'rxjs';
+import { Content } from 'src/app/shared/models/block.model';
+import { TimeService } from './timetables.service';
 
 @Component({
   selector: 'app-timetables',
   templateUrl: './timetables.component.html',
-  styleUrls: ['./timetables.component.css']
+  styleUrls: ['./timetables.component.css'],
 })
-export class TimetablesComponent implements OnInit {
-  imgTimetable = "https://timetables.kz/wp-content/uploads/2021/07/Timetables-main-page-2048x1070.png"
-  constructor() { }
+export class TimetablesComponent implements OnInit, OnDestroy {
+  @ViewChild('f') tmForm: NgForm;
+  subscription: Subscription;
+  editMode = false;
+  editedItemIndex: number;
+  editedItem: Content;
+  employees: Content[] = [new Content('1', 'frond'), new Content('2', 'back')];
 
-  ngOnInit(): void {
+  constructor(private tmService: TimeService) {}
+
+  ngOnInit(): void {}
+
+  onAddItem(form: NgForm) {
+    const value = form.value;
+    const newEmployees = new Content(value.id, value.name);
+    this.employees.push(newEmployees);
+    form.reset();
   }
 
-  
-    scroll(el: HTMLElement) {
-      el.scrollIntoView({behavior: 'smooth'});}
-  
+  onEditItem(index: number) {
+    (index: number) => {
+      this.editedItemIndex = index;
+      this.editMode = true;
+      this.editedItem = this.tmService.getemployee(index);
+      this.tmForm.setValue({
+        name: this.editedItem.id,
+        amount: this.editedItem.name,
+      });
+    };
+  }
+  onClear() {
+    this.tmForm.reset();
+  }
+  onDelete() {
+    this.employees.pop();
+    this.onClear();
+  }
+
+  ngOnDestroy() {}
 }

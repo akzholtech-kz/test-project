@@ -9,12 +9,9 @@
       <ul class="nav navbar-nav">
         <li><a role="button" (click)="scroll('main')">Главный</a></li>
         <li><a role="button" (click)="scroll('timetables')">Timetables</a></li>
-        <li><a role="button" (click)="scroll('edupage')">Edupage</a></li>
-        <li><a role="button" (click)="scroll('partners')">Partners</a></li>
-        <li><a role="button" (click)="scroll('contacts')">Contacts</a></li>
       </ul>
     </div>
-    <ul class="lang">
+    <ul class="lang pull-right">
       <li class="dropdown" appDropDown>
         <a class="dropdown-toggle" role="button"
           >{{ language ? "Қазақша" : "Русcкий" }}<span class="caret"></span

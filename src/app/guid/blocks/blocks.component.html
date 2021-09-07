@@ -1,8 +1,12 @@
 <div class="container">
   <div *ngIf="selectedFunction">
     <label>{{ selectedFunction.name }}</label>
-    <div class="list-1" >
-      <p *ngFor="let content of selectedFunction.contents" role="button" (click)="onClick(content)">
+    <div class="list-1">
+      <p
+        *ngFor="let content of selectedFunction.contents"
+        role="button"
+        (click)="onClick(content)"
+      >
         {{ content.name }}
       </p>
     </div>

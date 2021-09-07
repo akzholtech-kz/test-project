@@ -18,7 +18,7 @@ export class FuctionsComponent implements OnInit {
   ngOnInit(): void {
     this.dataService.fetchData().subscribe((response) => {
       this.functions = response;
-      console.log("functions: ", this.functions)
+      console.log('functions: ', this.functions);
     });
   }
 

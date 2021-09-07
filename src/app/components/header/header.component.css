@@ -3,12 +3,14 @@
   margin-top: 20px;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .nav.navbar-nav {
   font-family: "Ubuntu", sans-serif;
   font-size: 18px;
   margin-left: 50px;
+  
 }
 
 .nav.navbar-nav li a{
@@ -19,7 +21,7 @@
   list-style: none;
   font-size: 18px;
 }
-.navbar.navbar-default{
+/* .navbar.navbar-default{
   position: sticky;
   top: 0;
-}
+} */
