@@ -53,7 +53,7 @@
           *ngFor="let employee of employees; let i = index"
           (click)="onEditItem(i)"
         >
-          {{ employee.id }}) {{ employee.name }}
+          {{ employee.name }}) ({{ employee.id }})
         </a>
       </ul>
     </div>
